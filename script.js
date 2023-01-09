@@ -27,37 +27,40 @@ button.addEventListener('click', ()=>{
     for(let index =0; index < words.length; index+=1){
         let createSpan = document.createElement('span');
         createSpan.innerHTML = words[index];
+        let choice = [];
         let style = Math.floor(Math.random() * 3);
         if(style == 0){
-            createSpan.classList.add = 'newspaper';
+            choice.push('newspaper');
         } else if (style == 1){
-            createSpan.classList.add = 'magazine1';
+            choice.push('magazine1');
         } else if (style == 2){
-            createSpan.classList.add = 'magazine2';
-        }
+            choice.push('magazine2');
+        }else {};
 
         let size = Math.floor(Math.random() * 3);
         if(size == 0){
-            createSpan.classList.add = 'medium';
+            choice.push('medium');
         } else if (size == 1){
-            createSpan.classList.add = 'big';
+            choice.push('big');
         } else if (size == 2){
-            createSpan.classList.add = 'reallybig';
-        }
+            choice.push('reallybig');
+        }else {};
 
         let rotate = Math.floor(Math.random() * 2);
         if(rotate == 0){
-            createSpan.classList.add = 'rotateleft';
+            choice.push('rotateleft');
         } else if (rotate == 1){
-            createSpan.classList.add = 'rotateright';
-        }
+            choice.push('rotateright');
+        }else {};
 
         let skew = Math.floor(Math.random() * 2);
         if(skew == 0){
-            createSpan.classList.add = 'skewleft';
+            choice.push('skewleft');
         } else if (skew == 1){
-            createSpan.classList.add = 'skewright';
-        }
+            choice.push('skewright');
+        }else {};
+        let test = choice.toString().split(',');
+        createSpan.classList.add(...choice);
         createP.appendChild(createSpan);
     }}
 });

@@ -1,3 +1,19 @@
+body{
+    background-image: url(./images/bg.png);
+}
+
+h1{
+    text-align: center;
+}
+section{
+    margin-bottom: 40px;
+    margin-left: 12px;
+}
+span{
+    margin-left: 1.5%;
+}
+
+
 /* estilo */
 .newspaper{
     background-color: rgb(250, 235, 215);

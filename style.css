@@ -1,16 +1,24 @@
 body{
-    background-image: url(./images/bg.png);
+  margin: 0%;
+  background-color: lightgray;
 }
 
 h1{
     text-align: center;
 }
 section{
-    margin-bottom: 40px;
-    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5%;
 }
 span{
     margin-left: 1.5%;
+}
+
+#criar-carta {
+  width: 10%;
+  justify-self: end;
+
 }
 
 

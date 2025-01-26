@@ -2,3 +2,14 @@
 node_modules
 cypress/reports
 cypress/screenshots
+
+# Ignorar arquivos de build
+build/
+dist/
+
+# Ignorar arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos de configuração do ambiente
+.env
